@@ -1,0 +1,6 @@
+.contenedor_carrusel img{
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}

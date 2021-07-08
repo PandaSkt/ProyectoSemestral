@@ -100,9 +100,11 @@
           <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
           <script src="js/funciones.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
-        <div style="width: 30%;">
+
             <form action="funciones/formulario.html" method="POST" id="formulario" name="formulario">
-             <h1>Contacto</h1>
+             <div class="container">
+              <h1>Contacto</h1>
+             
                 <div class="form-group">
                     <label for="correo" class="form-label">correo</label>
                     <input type="email" name="correo" id="correo" placeholder="correo*" class="form-control">
@@ -117,7 +119,8 @@
                 </div>
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Enviar</button>
-                </div>
+
+              </div>
             </form>
         </div>
       </div>

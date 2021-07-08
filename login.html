@@ -76,8 +76,8 @@
         <form action="funciones/login.html" method="POST" id="formulario" name="formulario">
          <h1>Iniciar Sesion</h1>
             <div class="form-group">
-                <label for="nombre" class="form-label">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre*" class="form-control">
+                <label for="email" class="form-label">Correo:</label>
+                <input type="email" name="email" id="email" placeholder="Correo*" class="form-control">
             </div>
             <div class="form-group">
               <label for="contra" class="form-label">Contraseña: </label>
@@ -94,9 +94,9 @@
         $(document).ready(function(){
             $("#formulario").validate({
                 rules: {
-                    nombre: {
+                    correo: {
                         required: true,
-                        minlength: 8
+                        email: true
                     },
                     contra: {
                         required: true,
@@ -104,9 +104,9 @@
                     }
                 },
                 messages: {
-                    nombre: {
-                        required: "Por favor ingrese su nombre completo",
-                        minlength: "Debe ingresar al 8 caracteres"
+                    correo: {
+                        required: "Por favor ingrese su correo",
+                        email: "Ingrese un correo valido!"
                     },
                     contra: {
                         required: "Por favor ingrese su contraseña",

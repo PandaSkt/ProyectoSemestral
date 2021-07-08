@@ -64,9 +64,32 @@
               </li>
               
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <a class="nav-link active" aria-current="page" href="login.html">Iniciar Sesion</a>
-          </form>
+            <li class="nav-item">
+              <a aria-current="page" id="usuariologin" name="usuariologin" style="color:red">Contacto</a>
+            </li>
+                <li 
+                class="nav-link active" aria-current="page" id="logear" name="logear"><a aria-current="page" href="login.html">Iniciar Sesion</a>
+                </li>
+                <li class="nav-link active" aria-current="page" id="deslogear" name="deslogear"><a  aria-current="page" href="funciones/logout.html">Cerrar Sesion</a></li>
+                
+            
+            <script>
+              if(window.sessionStorage){
+                var nombre = sessionStorage.getItem("nombre");
+                
+                if(nombre==null){
+                  document.getElementById("usuariologin").innerHTML="";
+                  document.getElementById("logear").hidden=false;
+                  document.getElementById("deslogear").hidden=true;
+
+                }else{
+                 
+                  document.getElementById("usuariologin").innerHTML=nombre;
+                  document.getElementById("logear").hidden=true;
+                  document.getElementById("deslogear").hidden=false;
+                }
+              }
+            </script>
           </div>
         </div>
       </nav>

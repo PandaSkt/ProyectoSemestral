@@ -131,6 +131,33 @@
             </form>
         </div>
       </div>
+      <script>
+        $(document).ready(function(){
+            $("#formulario").validate({
+                rules: {
+                    correo: {
+                        required: true,
+                        email: true
+                    },
+                    contra: {
+                        required: true,
+                        minlength: 8
+                    }
+                },
+                messages: {
+                    correo: {
+                        required: "Por favor ingrese su correo",
+                        email: "Ingrese un correo valido!"
+                    },
+                    contra: {
+                        required: "Por favor ingrese su contraseña",
+                        minlength: "Debe ingresar al 8 caracteres"
+                    },
+                }
+            });
+            
+        });
+    </script>
     </div>                        
                 </div>
             </div>

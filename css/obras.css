@@ -46,3 +46,8 @@ body{
 .container label{
     width: 100%;
 }
+.info-covid{
+    margin-right: 16.35%;
+    margin-left: 16.4%;
+    margin-top: 0;
+}

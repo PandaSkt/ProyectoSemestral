@@ -13,6 +13,7 @@
     .error{color: rgb(255, 255, 255);
       font-display: 5px;
     }
+
 </style>
 
 </head>
@@ -66,14 +67,14 @@
       </nav>
         <!------------------------------------------------>
 <div class="container">
-  <div style="display: flex; justify-content: center; margin-top: 5%;">
+  <div style="display: flex; justify-content: center; margin-top: 5%; color: aliceblue;">
         <link rel="stylesheet" href="css/obras.css">
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="js/funciones.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
     <div style="width: 30%;">
         <form action="funciones/login.html" method="POST" id="formulario" name="formulario">
-         
+         <h1>Iniciar Sesion</h1>
             <div class="form-group">
                 <label for="nombre" class="form-label">Nombre:</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre*" class="form-control">
@@ -83,7 +84,7 @@
               <input type="password" name="contra" id="contra" placeholder="Contraseña*" class="form-control">
             </div>
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button><a href="registro.html"> <button type="button" class="btn btn-primary">registrar</button></a>
             </div>
         </form>
     </div>

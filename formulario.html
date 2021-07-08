@@ -60,7 +60,9 @@
                   <li><a class="dropdown-item" href="https://Gmail.com">Gmail</a></li>
                 </ul>
               </li>
-              
+              <li class="nav-item">
+                <a class="nav-link active" id="agregar" name="agregar" aria-current="page" href="agregar.html">agregar obra</a>
+              </li>
             </ul>
             <li class="nav-item">
               <a aria-current="page" id="usuariologin" name="usuariologin" style="color:red">Contacto</a>
@@ -102,7 +104,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
     <div style="width: 30%;">
         <form action="funciones/formulario.html" method="POST" id="formulario" name="formulario">
-         <h1>Iniciar Sesion</h1>
+         <h1>Contacto</h1>
             <div class="form-group">
                 <label for="nombre" class="form-label">Nombre:</label>
                 <input type="text" name="nombre" id="nombre" placeholder="nombre*" class="form-control">
@@ -121,6 +123,9 @@
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
+            <p></p>
+            <label for="">Nuestra sucursal se encuentra en Av. Andrés Bello 2425, Providencia, Región Metropolitana</label>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.2015632317984!2d-70.60857878426566!3d-33.417989003234304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf69d4854951%3A0x9a87ef2fefaad0df!2sCostanera%20Center!5e0!3m2!1ses!2scl!4v1625779355952!5m2!1ses!2scl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </form>
       </div>
   </div>
@@ -133,7 +138,7 @@
                         required: true,
                         minlength: 8
                     },
-                  tasunto: {
+                  asunto: {
                         required: true,
                     },
 
@@ -149,7 +154,7 @@
                   asunto: {
                         required: "Ingrese el Asunto",
                     },
-                  historia: {
+                  msj: {
                         required: "Ingrese el Mensaje para ponernos en contacto",
                     },
                 }
